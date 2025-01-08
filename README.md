@@ -1,1 +1,1 @@
-https://github.com/beyondthehell/posmotri-v-okno-fd - ссылка
+https://github.com/beyondthehell/posmotri-v-okno-fd - это ссылка
