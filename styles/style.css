@@ -16,7 +16,6 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +77,7 @@ ol {
   gap: 14px;
 }
 .result__video-container {
-  width: 711px;
+  inline-size: 711px;
   height: 386px;
   position: relative;
 }
@@ -101,7 +100,7 @@ ol {
   line-height: 21.6px;
 }
 .search-form__fieldset-title {
-  font-family: inherit;
+  font-family: inherit, sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
@@ -120,6 +119,7 @@ ol {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 .search-form__textfield {
   min-width: 225px;
@@ -130,7 +130,7 @@ ol {
   min-height: 25px;
   padding-top: 2.5px;
   padding-bottom: 2.5px;
-  font-family: inherit;
+  font-family: inherit, sans-serif;
   color: inherit;
   font-size: inherit;
   appearance: none;
@@ -188,9 +188,9 @@ ol {
   background-color: transparent;
   font-size: inherit;
   font-weight: 700;
-  font-family: inherit;
+  font-family: inherit, sans-serif;
   color: inherit;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
 }
 .button:hover {
   text-decoration: underline;
@@ -220,13 +220,13 @@ ol {
   gap: 16px;
 }
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   text-transform: uppercase;
   font-size: 75px;
   line-height: 70.5px;
 }
 .content__accent {
-  opacity: 0.4;
+  color: #545050;
 }
 
 .content__list-container {
@@ -242,7 +242,7 @@ ol {
 }
 .content__card-link {
   text-decoration: none;
-  font-family: inherit;
+  font-family: inherit, sans-serif;
   font-size: 18px;
   color: #fff;
   font-weight: 400;
@@ -278,7 +278,7 @@ ol {
 .content__video-card-title {
   text-transform: uppercase;
   font-size: 30px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   width: 196px;
   white-space: nowrap;
   overflow: hidden;
@@ -286,7 +286,7 @@ ol {
 }
 .content__video-card-description {
   font-weight: 400;
-  font-family: inherit;
+  font-family: inherit, sans-serif;
   font-size: inherit;
   line-height: 16.2px;
   overflow: hidden;
@@ -300,6 +300,7 @@ ol {
   width: 194px;
   height: 103px;
   object-fit: cover;
+  object-position: center;
 }
 .more-button {
   padding: 6px 142px;
