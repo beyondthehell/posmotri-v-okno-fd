@@ -78,13 +78,13 @@ ol {
 }
 .result__video-container {
   inline-size: 711px;
-  height: 386px;
+  block-size: 386px;
   position: relative;
 }
 .result__video {
   position: relative;
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
 }
 .search-form {
@@ -125,11 +125,12 @@ ol {
   min-width: 225px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #fff;
-  border-top: 1px solid #fff;
+  border-block-end: 1px solid #fff;
+  border-block-start: 1px solid #fff;
   min-height: 25px;
-  padding-top: 2.5px;
-  padding-bottom: 2.5px;
+  padding-block-start: 2.5px;
+  padding-block-end: 2.5px;
+  padding-inline-end: 14px;
   font-family: inherit, sans-serif;
   color: inherit;
   font-size: inherit;
@@ -138,7 +139,7 @@ ol {
 .search-form__textfield::placeholder {
   color: #fff;
   opacity: 0.7;
-  font-size: inherit;
+  font-size: 16px;
   line-height: 21.6px;
   font-weight: 400;
 }
@@ -158,8 +159,8 @@ ol {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   position: relative;
   content: "";
-  width: 15px;
-  height: 15px;
+  inline-size: 15px;
+  block-size: 15px;
   background-color: #fff;
 }
 .search-form__checkbox-list > .search-form__label:active {
@@ -168,19 +169,19 @@ ol {
 .search-form__checkbox:active + .search-form__pseudo-checkbox::after {
   position: relative;
   content: "";
-  width: 15px;
-  height: 15px;
+  inline-size: 15px;
+  block-size: 15px;
   background-color: #fff;
 }
 
 .search-form__pseudo-checkbox {
-  width: 19px;
-  height: 19px;
+  inline-size: 19px;
+  block-size: 19px;
   border: 1px solid #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 5px;
+  margin-inline-end: 5px;
 }
 
 .button {
@@ -230,7 +231,7 @@ ol {
 }
 
 .content__list-container {
-  height: 298px;
+  block-size: 298px;
   overflow: auto;
   position: relative;
 }
@@ -280,7 +281,7 @@ ol {
   text-transform: uppercase;
   font-size: 30px;
   font-family: Oswald, sans-serif;
-  width: 196px;
+  inline-size: 196px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -298,13 +299,13 @@ ol {
   text-wrap: wrap;
 }
 .content__video-card-thumbnail {
-  width: 194px;
-  height: 103px;
+  inline-size: 194px;
+  block-size: 103px;
   object-fit: cover;
   object-position: center;
 }
 .more-button {
   padding: 6px 142px;
   text-wrap: nowrap;
-  margin-top: 30px;
+  margin-block-start: 30px;
 }
